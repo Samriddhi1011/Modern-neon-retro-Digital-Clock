@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Neon Clock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-cyber">
+
+  <div class="bg-grid"></div>
+  <div class="retro-sun"></div>
+  <div class="scanlines" id="scanlines"></div>
+
+  <main class="clock-wrapper">
+    <div class="top-tag">SYSTEM TIME </div>
+
+    <div class="clock-box">
+      <div class="time-row">
+        <span id="hrs" class="digit">00</span>
+        <span class="colon">:</span>
+        <span id="mins" class="digit">00</span>
+        <span class="colon">:</span>
+        <span id="secs" class="digit">00</span>
+        <div class="side-info">
+          <span id="ampm" class="ampm-tag">AM</span>
+          <span id="ms" class="ms-tag">.00</span>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div id="sec-bar" class="progress-fill"></div>
+      </div>
+
+      <div id="date-display" class="date-text">LOADING DATE...</div>
+    </div>
+
+    <div class="controls">
+      <button id="format-btn" class="btn">12H / 24H</button>
+      <button id="theme-btn" class="btn">THEME: CYBER</button>
+      <button id="crt-btn" class="btn">CRT: ON</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
